@@ -386,12 +386,6 @@ style.textContent = `
         to { transform: rotate(360deg); }
     }
     
-    .page-header {
-        background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-        padding: 120px 0 80px;
-        margin-top: 76px;
-    }
-    
     .contact-section {
         background: var(--white);
     }

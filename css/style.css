@@ -165,7 +165,7 @@ body {
 }
 
 .page-header {
-    background: linear-gradient(135deg, rgba(44, 62, 80, 0.7), rgba(52, 73, 94, 0.7)), url('../img/fondo.jpg');
+    background: url('../img/fondo.jpg');
     background-size: cover;
     background-position: center;
     padding: 140px 0 80px;
