@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <!-- Navbar  -->
     <nav class="navbar navbar-expand-lg navbar-elegant fixed-top">
@@ -15,7 +17,7 @@
             <a class="navbar-brand" href="index.html">
                 <div class="brand-container">
                     <img src="img/apolo-logo.png" alt="Importaciones Apolo" class="brand-logo">
-                    <span class="brand-text">IMPORTACIONES APOLO</span>
+                    <span class="brand-text"></span>
                 </div>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -24,13 +26,15 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" id="productosDropdown" role="button" data-bs-toggle="dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="productosDropdown" role="button"
+                            data-bs-toggle="dropdown">
                             <i class="bi bi-box-seam me-2"></i>Productos
                         </a>
                         <ul class="dropdown-menu dropdown-elegant">
                             <li><a class="dropdown-item" href="productos.html">Todos</a></li>
                             <li><a class="dropdown-item" href="#apolo">Marca Apolo</a></li>
                             <li><a class="dropdown-item" href="#overts">Marca Overts</a></li>
+                            <li><a class="dropdown-item" href="#otras-marcas">Otras Marcas</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -49,14 +53,14 @@
                         </a>
                     </li>
                 </ul>
-                <form class="d-flex search-form">
+                <div class="d-flex search-form">
                     <div class="input-group">
                         <input class="form-control" type="search" placeholder="Buscar productos..." aria-label="Search">
-                        <button class="btn btn-search" type="submit">
+                        <button class="btn btn-search" type="button">
                             <i class="bi bi-search"></i>
                         </button>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
     </nav>
@@ -81,7 +85,7 @@
                     <p class="lead">Productos de alta calidad para el mantenimiento automotriz e industrial</p>
                 </div>
             </div>
-            <div class="row mb-5">
+            <div class="row g-4 mb-5">
                 <div class="col-12">
                     <h3 class="product-category-title">Grasas</h3>
                 </div>
@@ -116,7 +120,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row mb-5">
+            <div class="row g-4 mb-5">
                 <div class="col-12">
                     <h3 class="product-category-title">Aceites para Motocicletas</h3>
                 </div>
@@ -166,7 +170,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row g-4">
                 <div class="col-12">
                     <h3 class="product-category-title">Aceites Industriales y Transmisiones</h3>
                 </div>
@@ -226,7 +230,7 @@
                     <p class="lead">Soluciones químicas especializadas para el mantenimiento profesional</p>
                 </div>
             </div>
-            <div class="row mb-5">
+            <div class="row g-4 mb-5">
                 <div class="col-12">
                     <h3 class="product-category-title">Siliconas</h3>
                 </div>
@@ -287,7 +291,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row mb-5">
+            <div class="row g-4 mb-5">
                 <div class="col-12">
                     <h3 class="product-category-title">Aceites Monogrado</h3>
                 </div>
@@ -334,7 +338,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row mb-5">
+            <div class="row g-4 mb-5">
                 <div class="col-12">
                     <h3 class="product-category-title">Aceites para Transmisión</h3>
                 </div>
@@ -381,7 +385,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row g-4">
                 <div class="col-12">
                     <h3 class="product-category-title">Productos Especializados</h3>
                 </div>
@@ -416,9 +420,9 @@
                 <div class="col-md-4">
                     <div class="product-card-elegant">
                         <div class="product-badge">Overts</div>
-                        <img src="img/overts/refrigerante.png" class="product-img" alt="Refrigerantes">
+                        <img src="img/overts/refrigerante.png" class="product-img" alt="Líquido Radiador">
                         <div class="product-content">
-                            <h5 class="product-name">Refrigerantes</h5>
+                            <h5 class="product-name">Antifreeze</h5>
                             <p class="product-desc">17%, 30%, 50% - Para sistemas de refrigeración</p>
                             <div class="product-specs">
                                 <span class="spec-tag">Multiple</span>
@@ -428,8 +432,177 @@
                     </div>
                 </div>
             </div>
+            <div class="row g-4 mt-4">
+                <div class="col-md-4">
+                    <div class="product-card-elegant">
+                        <div class="product-badge">Overts</div>
+                        <img src="img/overts/dtos.png" class="product-img" alt="Liquido para Frenos">
+                        <div class="product-content">
+                            <h5 class="product-name">Líquido para Frenos</h5>
+                            <p class="product-desc">DOT-3 y DOT-4 - Para todo tipo de vehículos</p>
+                            <div class="product-specs">
+                                <span class="spec-tag">DOT-3</span>
+                                <span class="spec-tag">DOT-4</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product-card-elegant">
+                        <div class="product-badge">Overts</div>
+                        <img src="img/overts/shampoo.png" class="product-img" alt="Shampoo para Auto">
+                        <div class="product-content">
+                            <h5 class="product-name">Shampoo para Auto</h5>
+                            <p class="product-desc">Con cera - Alto brillo y protección</p>
+                            <div class="product-specs">
+                                <span class="spec-tag">Cera</span>
+                                <span class="spec-tag">Limpieza</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product-card-elegant">
+                        <div class="product-badge">Overts</div>
+                        <img src="img/overts/comprenssor.png" class="product-img" alt="Aceite para Compresor">
+                        <div class="product-content">
+                            <h5 class="product-name">Aceite para Compresor</h5>
+                            <p class="product-desc">ISO 68 - Para compresores de aire</p>
+                            <div class="product-specs">
+                                <span class="spec-tag">ISO 68</span>
+                                <span class="spec-tag">Compresor</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product-card-elegant">
+                        <div class="product-badge">Overts</div>
+                        <img src="img/overts/radiador.png" class="product-img" alt="Aceite para Compresor">
+                        <div class="product-content">
+                            <h5 class="product-name">Liquido Radiador</h5>
+                            <p class="product-desc">Refrigerante-Antioxidante-Anticorrocivo</p>
+                            <div class="product-specs">
+                                <span class="spec-tag">Rojo</span>
+                                <span class="spec-tag">Verde</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
+    <!-- Otras Marcas -->
+    <section id="otras-marcas" class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="section-title">Otras <span class="text-accent">Marcas</span></h2>
+                    <p class="lead">Más marcas de calidad que distribuimos</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="product-card-elegant">
+                        <img src="img/otras/frenosa.jpg" class="product-img" alt="Marca 1">
+                        <div class="product-content">
+                            <h5 class="product-name">Frenosa</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="product-card-elegant">
+                        <img src="img/otras/wagner.jpg" class="product-img" alt="Marca 2">
+                        <div class="product-content">
+                            <h5 class="product-name">Wagner</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="product-card-elegant">
+                        <img src="img/otras/boil.jpg" class="product-img" alt="Marca 3">
+                        <div class="product-content">
+                            <h5 class="product-name">Boil</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="product-card-elegant">
+                        <img src="img/otras/chevron.jpg" class="product-img" alt="Marca 4">
+                        <div class="product-content">
+                            <h5 class="product-name">Chevron</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="product-card-elegant">
+                        <img src="img/otras/lys.png" class="product-img" alt="Marca 5">
+                        <div class="product-content">
+                            <h5 class="product-name">LYS</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="product-card-elegant">
+                        <img src="img/otras/amalie.png" class="product-img" alt="Marca 6">
+                        <div class="product-content">
+                            <h5 class="product-name">Amalie</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="product-card-elegant">
+                        <img src="img/otras/peak.png" class="product-img" alt="Marca 7">
+                        <div class="product-content">
+                            <h5 class="product-name">Peak</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="product-card-elegant">
+                        <img src="img/otras/3bsi.png" class="product-img" alt="Marca 8">
+                        <div class="product-content">
+                            <h5 class="product-name">3 BSI</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="product-card-elegant">
+                        <img src="img/otras/vextrom.png" class="product-img" alt="Marca 9">
+                        <div class="product-content">
+                            <h5 class="product-name">Vextrom</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="product-card-elegant">
+                        <img src="img/otras/bosch.png" class="product-img" alt="Marca 10">
+                        <div class="product-content">
+                            <h5 class="product-name">Bosch</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="product-card-elegant">
+                        <img src="img/otras/green.png" class="product-img" alt="Marca 11">
+                        <div class="product-content">
+                            <h5 class="product-name">Green Flag</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="product-card-elegant">
+                        <img src="img/otras/prestone.png" class="product-img" alt="Marca 12">
+                        <div class="product-content">
+                            <h5 class="product-name">Prestone</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Footer -->
     <footer class="footer-elegant">
@@ -439,12 +612,16 @@
                     <div class="col-lg-4 mb-4">
                         <div class="footer-brand">
                             <img src="img/apolo-logo.png" alt="Importaciones Apolo" class="footer-logo">
-                            <h4>IMPORTACIONES APOLO</h4>
-                            <p class="footer-desc">Especialistas en importación y distribución de las marcas Overts y Apolo en todo el Perú.</p>
+                            <h4>IMPORTACION Y DISTRIBUCION NACIONAL D&V APOLO S.A.C</h4>
+                            <p class="footer-desc">Especialistas en importación y distribución de las marcas Overts y
+                                Apolo en todo el Perú.</p>
                             <div class="social-links">
-                                <a href="https://facebook.com/profile.php?id=61582289835174" class="social-link"><i class="bi bi-facebook"></i></a>
-                                <a href="https://www.instagram.com/apoloimportaciones/" class="social-link"><i class="bi bi-instagram"></i></a>
-                                <a href="https://www.tiktok.com/@apoloimportaciones" class="social-link"><i class="bi bi-tiktok"></i></a>
+                                <a href="https://facebook.com/profile.php?id=61582289835174" class="social-link"><i
+                                        class="bi bi-facebook"></i></a>
+                                <a href="https://www.instagram.com/apoloimportaciones/" class="social-link"><i
+                                        class="bi bi-instagram"></i></a>
+                                <a href="https://www.tiktok.com/@apoloimportaciones" class="social-link"><i
+                                        class="bi bi-tiktok"></i></a>
                             </div>
                         </div>
                     </div>
@@ -453,6 +630,7 @@
                         <ul class="footer-links">
                             <li><a href="#apolo">Marca Apolo</a></li>
                             <li><a href="#overts">Marca Overts</a></li>
+                            <li><a href="#otras-marcas">Otras Marcas</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-2 col-6 mb-4">
@@ -477,12 +655,13 @@
     </footer>
 
     <!-- Botón Flotante WhatsApp -->
-    <a href="https://wa.me/51958400028?text=Hola,%20estoy%20interesado%20en%20los%20productos%20de%20Importaciones%20Apolo" 
-       class="whatsapp-float" target="_blank">
+    <a href="https://wa.me/51958400028?text=Hola,%20estoy%20interesado%20en%20los%20productos%20de%20Importaciones%20Apolo"
+        class="whatsapp-float" target="_blank">
         <i class="bi bi-whatsapp"></i>
     </a>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>

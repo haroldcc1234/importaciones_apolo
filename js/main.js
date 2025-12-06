@@ -1,6 +1,5 @@
 
 document.addEventListener('DOMContentLoaded', function() {
-    emailjs.init("Jm_erYIMlPMfxsR3w");
     const navbar = document.querySelector('.navbar-elegant');
     if (navbar) {
         window.addEventListener('scroll', function() {
@@ -44,6 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
+        emailjs.init("Jm_erYIMlPMfxsR3w");
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
@@ -125,15 +125,19 @@ document.addEventListener('DOMContentLoaded', function() {
         let foundProducts = 0;
         
         productCards.forEach(card => {
-            const productName = card.querySelector('.product-name').textContent.toLowerCase();
-            const productDesc = card.querySelector('.product-desc').textContent.toLowerCase();
-            const productSpecs = card.querySelector('.product-specs').textContent.toLowerCase();
+            const productNameEl = card.querySelector('.product-name');
+            const productDescEl = card.querySelector('.product-desc');
+            const productSpecsEl = card.querySelector('.product-specs');
+
+            const productName = productNameEl ? productNameEl.textContent.toLowerCase() : '';
+            const productDesc = productDescEl ? productDescEl.textContent.toLowerCase() : '';
+            const productSpecs = productSpecsEl ? productSpecsEl.textContent.toLowerCase() : '';
             
             const searchTerms = searchTerm.split(' ');
             let matchFound = false;
             
             searchTerms.forEach(term => {
-                if (term.length > 2 && (
+                if (term.length > 1 && (
                     productName.includes(term) || 
                     productDesc.includes(term) || 
                     productSpecs.includes(term)
@@ -145,10 +149,10 @@ document.addEventListener('DOMContentLoaded', function() {
             if (matchFound) {
                 foundProducts++;
                 card.style.display = 'block';
-                card.classList.add('highlighted');                
-                highlightTextInElement(card.querySelector('.product-name'), searchTerm);
-                highlightTextInElement(card.querySelector('.product-desc'), searchTerm);
-                highlightTextInElement(card.querySelector('.product-specs'), searchTerm);
+                card.classList.add('highlighted');
+                if (productNameEl) highlightTextInElement(productNameEl, searchTerm);
+                if (productDescEl) highlightTextInElement(productDescEl, searchTerm);
+                if (productSpecsEl) highlightTextInElement(productSpecsEl, searchTerm);
             } else {
                 card.style.display = 'none';
             }
@@ -163,12 +167,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function highlightTextInElement(element, searchTerm) {
+        if (!element) return;
         const text = element.innerHTML;
         const searchTerms = searchTerm.split(' ');
         
         let highlightedText = text;
         searchTerms.forEach(term => {
-            if (term.length > 2) {
+            if (term.length > 1) {
                 const regex = new RegExp(`(${term})`, 'gi');
                 highlightedText = highlightedText.replace(regex, '<mark class="search-highlight">$1</mark>');
             }

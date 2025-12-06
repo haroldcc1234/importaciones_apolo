@@ -118,13 +118,10 @@ body {
     background: var(--secondary-color);
 }
 
-.hero-carousel {
-    margin-top: 76px;
-}
+
 
 .hero-carousel .carousel-item {
-    height: 70vh;
-    min-height: 500px;
+    height: 100vh;
 }
 
 .hero-carousel .carousel-item img {
@@ -168,7 +165,9 @@ body {
 }
 
 .page-header {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(135deg, rgba(44, 62, 80, 0.7), rgba(52, 73, 94, 0.7)), url('../img/fondo.jpg');
+    background-size: cover;
+    background-position: center;
     padding: 140px 0 80px;
     margin-top: 76px;
     text-align: center;
@@ -220,6 +219,12 @@ body {
     padding: 2rem;
     text-align: center;
     position: relative;
+}
+
+.brand-section-logo {
+    height: 100px;
+    margin-bottom: 1rem;
+    object-fit: contain;
 }
 
 .brand-logo-img {
@@ -1166,11 +1171,55 @@ button:focus,
 }
 
 @keyframes highlightPulse {
-    0% { box-shadow: 0 0 0 0 rgba(var(--accent-rgb), 0.4); }
+    0% { box-shadow: 0 0 0 0 rgba(var(--accent-rgb), 0.4); } /* Usando la variable RGB */
     70% { box-shadow: 0 0 0 10px rgba(var(--accent-rgb), 0); }
     100% { box-shadow: 0 0 0 0 rgba(var(--accent-rgb), 0); }
 }
 
 .product-card-elegant.highlighted {
     animation: highlightPulse 2s;
+}
+/* Estilos para el buscador */
+.search-highlight {
+    background-color: #FFD700;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.product-card-elegant.highlighted {
+    border: 2px solid var(--accent-color);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+    animation: highlightPulse 2s;
+}
+
+@keyframes highlightPulse {
+    0% { box-shadow: 0 0 0 0 rgba(var(--accent-rgb), 0.4); }
+    70% { box-shadow: 0 0 0 10px rgba(var(--accent-rgb), 0); }
+    100% { box-shadow: 0 0 0 0 rgba(var(--accent-rgb), 0); }
+}
+
+.btn-clear-search:hover {
+    color: var(--accent-color) !important;
+    transform: scale(1.1) !important;
+}
+
+.no-results-message {
+    text-align: center;
+    padding: 3rem;
+    color: var(--gray-dark);
+    grid-column: 1 / -1;
+    background: white;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    margin: 2rem auto;
+    max-width: 600px;
+}
+
+.no-results-message i {
+    font-size: 3rem;
+    color: var(--gray-light);
+    margin-bottom: 1rem;
 }
