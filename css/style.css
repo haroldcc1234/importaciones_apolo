@@ -174,7 +174,7 @@ body {
 }
 
 .page-header h1 {
-    color: var(--white);
+    color: var(--dark-color);
     font-weight: 700;
     margin-bottom: 1rem;
 }
@@ -1222,4 +1222,22 @@ button:focus,
     font-size: 3rem;
     color: var(--gray-light);
     margin-bottom: 1rem;
+}
+
+/* Círculo con logo para tarjetas en "Otras Marcas" */
+#otras-marcas .product-card-elegant::before {
+    content: '';
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 60px;
+    height: 60px;
+    background-image: url('../img/apolo-logo.png');
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--white);
+    border-radius: 50%;
+    border: 2px solid var(--border-color);
+    z-index: 3;
 }
