@@ -368,6 +368,28 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    const productModal = document.getElementById('productModal');
+    if (productModal) {
+        productModal.addEventListener('show.bs.modal', function (event) {
+            const card = event.relatedTarget;
+            const productName = card.getAttribute('data-product-name');
+            const specImgSrc = card.getAttribute('data-spec-img');
+
+            const modalTitle = productModal.querySelector('.modal-title');
+            const specImage = productModal.querySelector('#specImage');
+
+            modalTitle.textContent = productName;
+            specImage.src = specImgSrc;
+
+            specImage.onerror = function() {
+                // If the image fails to load, you can set a default image
+                // or hide the image element.
+                specImage.src = 'img/especificaciones/placeholder.png'; // A default placeholder
+                console.warn(`Image not found for ${productName}: ${specImgSrc}. Showing placeholder.`);
+            };
+        });
+    }
+
     if (window.location.pathname.includes('productos.html')) {
         processURLSearch();
     }

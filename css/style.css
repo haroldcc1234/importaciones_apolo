@@ -316,9 +316,10 @@ body {
     flex-direction: column;
 }
 
-.product-card-elegant:hover {
+.product-card-elegant[data-bs-toggle="modal"]:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-hover);
+    cursor: pointer;
 }
 
 .product-badge {
