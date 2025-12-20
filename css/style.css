@@ -1260,7 +1260,8 @@ button:focus,
 
 /* Reset the product card container for the flip effect */
 #apolo .product-card-elegant,
-#overts .product-card-elegant {
+#overts .product-card-elegant,
+#otras-marcas .product-card-elegant {
     padding: 0;
     border: none;
     background: transparent;
@@ -1271,12 +1272,14 @@ button:focus,
 
 /* Disable original hover effects for flipping cards */
 #apolo .product-card-elegant:hover,
-#overts .product-card-elegant:hover {
+#overts .product-card-elegant:hover,
+#otras-marcas .product-card-elegant:hover {
     transform: none;
     box-shadow: none;
 }
 #apolo .product-card-elegant:hover .product-img,
-#overts .product-card-elegant:hover .product-img {
+#overts .product-card-elegant:hover .product-img,
+#otras-marcas .product-card-elegant:hover .product-img {
     transform: scale(1);
 }
 
